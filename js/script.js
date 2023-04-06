@@ -17,7 +17,7 @@ const createPet = function(name, species){
 
             } else {
                 console.log(` Yay, ${this.name} loves to play`);
-                this.isTired +=1;
+                this.isTired += 1;
             }
         }
        
@@ -33,14 +33,14 @@ const francine = createPet("Francine","turtle");
 
 //console.log(sora, clover, baxter, cleo, francine);
 
-clover.sleep();
-baxter.play();
+// clover.sleep();
+// baxter.play();
 clover.isTired = 8;
 francine.isTired = 9;
 
 const allPets = [sora, clover, baxter, cleo, francine];
 
-console.log(allPets);
+
 
 const showPets = function(petArray){
     pets.innerHTML = "";
@@ -51,7 +51,7 @@ const showPets = function(petArray){
             status = "sleeping";
         }
          let li = document.createElement("li");
-         li.innerHTML = `<span class="pet-name">${pet.name} </span>the ${pet.species} is ${pet.status}`
+         li.innerHTML = `<span class="pet-name">${pet.name} </span>the ${pet.species} is ${pet.status}`;
         pets.append(li);
 
     }
